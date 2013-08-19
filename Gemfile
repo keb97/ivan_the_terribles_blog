@@ -20,9 +20,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'foreman'
 gem 'jquery-rails'
 gem 'faker'
 gem 'will_paginate', '> 3.0'
+gem 'rack-cachely'
 
 group :development, :test do
   gem 'rspec-rails'

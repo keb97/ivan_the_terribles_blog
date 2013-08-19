@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+before_filter do
+  headers['Cache-Control'] = 'public; max-age=86400'
+end
+
   # GET /posts
   # GET /posts.json
   def index
